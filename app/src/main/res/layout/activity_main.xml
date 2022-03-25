@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ваше мяу"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-light"
+        android:inputType="textPersonName"
+         />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@drawable/cats"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="casual"
+            android:rotation="-14"
+            android:text="Ты можешь помяукать..."
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+        
+    </RelativeLayout>
+
+    <TextView
+        android:text="Выберите котика"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </Spinner>
+    
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/dedins"
+        android:scaleType="centerCrop"
+        android:layout_width="200dp"
+        android:layout_height="130dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="366dp">
+
+        <TextView
+            android:id="@+id/priceTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Количество мяу"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/priceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/priceTitleTextView"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/сurrencyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/priceTitleTextView"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toRightOf="@id/priceTextView"
+            android:text="мяу"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/quantitiTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="125dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toRightOf="@id/priceTitleTextView"
+            android:text="Мяукните"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/minusButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/quantitiTitleTextView"
+            android:layout_marginStart="140dp"
+            android:layout_marginLeft="111dp"
+            android:layout_marginTop="-1dp"
+            android:layout_toRightOf="@id/сurrencyTextView"
+            android:background="#696969"
+            android:text="-"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/quantitiTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/priceTitleTextView"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toRightOf="@id/minusButton"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/plusButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/quantitiTitleTextView"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="-1dp"
+            android:layout_toRightOf="@id/quantitiTextView"
+            android:background="#696969"
+            android:text="+"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:text="Добавьте своего котика (не надо)"
+        android:textColor="@android:color/white"
+        android:background="#696969"
+        android:layout_marginTop="-60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
